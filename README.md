@@ -13,7 +13,7 @@
 
 ✅ JSON data transfer using dedicated API (encryption in works rn!)
 
-✅ Embed the stream in Your blog or any other website, bc it's a dynammic IMG element
+✅ Embed the stream in Your blog or any other website, bc it's a dynamic IMG element
 
 <br/>
 
