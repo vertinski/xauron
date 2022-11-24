@@ -39,7 +39,7 @@ import time
 
 p0 = subprocess.Popen(["uvicorn screengrab:app --header Access-Control-Allow-Origin:* --host 0.0.0.0 --reload"], shell=True)
 
-print('starting web server.....')
+print('starting web server on port 8888.....')
 p2 = subprocess.Popen(["python3 -m http.server 8888"], shell=True)
 
 
