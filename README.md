@@ -1,9 +1,7 @@
-# xauron
+# xauron-0.0.1
 ## Project Xauron 🔮
 
-![alt text](https://github.com/vertinski/xauron/resources/logo-002_small.png "xauron")
-
-### 📎 xauron-0.0.1 
+![logo](https://github.com/vertinski/xauron/blob/main/resources/logo-002_small.png "xauron")
 
 ### Remote Desktop Streaming App 
 
