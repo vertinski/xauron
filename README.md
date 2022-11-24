@@ -7,11 +7,13 @@
 
 <br/>
 
-✅ Live-stream Your desktop to any web browser (smartphone included)
+✅ Live-stream Your desktop to any web browser (smartphones included)
 
 ✅ Work on a remote machine from anywhere with internet access
 
 ✅ JSON data transfer using dedicated API (encryption in works rn!)
+
+✅ Embed the stream in Your blog or any other website, bc it's a dynammic IMG element
 
 <br/>
 
