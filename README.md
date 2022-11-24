@@ -9,7 +9,7 @@
 
 ✅ Live-stream Your desktop to any web browser (smartphone included)
 
-✅ Work on remote machine from anywhere with internet access
+✅ Work on a remote machine from anywhere with internet access
 
 ✅ JSON data transfer using dedicated API (encryption in works rn!)
 
@@ -21,7 +21,7 @@
 ⚠️ Ongoing active development on stream encryption, needs to be implemented asap. 
 
 <br/>
-🤝 Contributions welcome!  DM [@vertinski](https://twitter.com/vertinski) on twitter
+🤝 Contributions welcome!  DM <a href="https://twitter.com/vertinski">@vertinski</a> on twitter
 <br/>
 
 This repo is The Genesis of Xauron (2022). 
