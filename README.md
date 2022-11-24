@@ -14,8 +14,10 @@
 ✅ JSON data transfer using dedicated API (encryption in works rn!)
 
 <br/>
-> Web page is served on port 8888, and API is open at port 8000
-> Both visible on local network (LAN) unless configured and routed otherwise. 
+
+> Web page is served on port 8888, and API is open at port 8000  
+> Both visible on local network (LAN) unless configured and routed otherwise.  
+
 <br/>
 
 ⚠️ Web page and API are accessible to anyone in local network for now! Needs access rules and network management. 
