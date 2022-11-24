@@ -27,7 +27,7 @@
 ⚠️ Ongoing active development on stream encryption, needs to be implemented asap. 
 
 <br/>
-🤝 Contributions welcome!  DM <a href="https://twitter.com/vertinski">@vertinski</a> on twitter
+🤝 Contributions welcome!  DM <a href="https://twitter.com/xauron_io">@xauron_io</a> on twitter
 <br/>
 
 This repo is The Genesis of Xauron (2022). 
