@@ -3,7 +3,7 @@
 
 ![logo](https://github.com/vertinski/xauron/blob/main/resources/logo-002_small.png "xauron")
 
-### Remote Desktop Streaming App 
+### Remote Desktop Streaming App for Linux 
 
 <br/>
 
