@@ -45,7 +45,24 @@ data = ''
 iteration = 0
 length = 0
 
+
+with open ('txt_key.txt', 'r') as f:
+    txt_key = f.read().strip()
+    key = txt_key.encode()   #encode as bytes
+
+
 print("Screengrab is active!")
+
+
+def xor_with_key (data: bytes, key: bytes) -> bytes:
+    # Repeat the key for the length of the data
+    repeated_key = key * ((len(data) // len(key)) + 1)
+
+    # Perform the XOR operation using the ^ operator
+    xored_data = bytes ([b1 ^ b2 for b1, b2 in zip(data, repeated_key)])
+
+    return xored_data
+
 
 def screengrab():
     global data, iteration, length
@@ -72,8 +89,9 @@ def screengrab():
     myscreen.save(buf, format='JPEG') #save image data to a temporary buffer
     byte_im = buf.getvalue()
 
+    xored_data = xor_with_key(byte_im, key)
 
-    data = base64.b64encode(byte_im)   #encode image data as base64
+    data = base64.b64encode(xored_data)   #encode image data as base64
     length = (len(data) / 1024)   #data size in Kb(🤔🤔🤔)
 
     iteration += 1   #each iteration uses some of the key
@@ -91,12 +109,4 @@ async def root():
 
 
 ### TODO: add + customize the API endpoints
-
-
-
-
-
-
-
-
 
