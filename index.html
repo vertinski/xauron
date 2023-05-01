@@ -47,27 +47,59 @@ SOFTWARE.
 <body>
 
     <script>
+        let key = 'mykey'; // Default key value
+
+        function decryptAndDisplay(data) {
+            // Convert the base64-encoded data to bytes
+            let decoded_data = atob(data);
+            let bytes = new Uint8Array(decoded_data.length);
+            for (let i = 0; i < decoded_data.length; i++) {
+                bytes[i] = decoded_data.charCodeAt(i);
+            }
+
+            // Convert the key to bytes
+            let key_bytes = new Uint8Array(key.length);
+            for (let i = 0; i < key.length; i++) {
+                key_bytes[i] = key.charCodeAt(i);
+            }
+
+            // XOR the data with the key
+            let xored_bytes = new Uint8Array(bytes.length);
+            for (let i = 0; i < bytes.length; i++) {
+                xored_bytes[i] = bytes[i] ^ key_bytes[i % key_bytes.length];
+            }
+
+            // Convert the XOR'd bytes to a base64-encoded JPEG image and display it
+            let base64_data = btoa(String.fromCharCode.apply(null, xored_bytes));
+            document.getElementById('myImage').src = 'data:image/jpeg;base64,' + base64_data;
+        }
 
         setInterval(function() {
         fetch(window.location.href.slice(0,-6) + ':8000/') //get current url + add port
           .then(response => response.json())
           .then(data => {
-                document.getElementById('myImage').src="data:image/jpg;base64," + data.content;
+                decryptAndDisplay(data.content);
                 console.log('Iteration: ' + data.iteration);
                 console.log('Size: ' + data.size + 'Kb');
                 })
         }, 200);
 
+        function updateKey() {
+            key = document.getElementById('keyInput').value;
+        }
+
     </script>
 
-<img src="zzzzz.jpg" id="myImage"/>
+    <label for="keyInput">Key:</label>
+    <input type="text" id="keyInput" value="mykey"/>
+    <button type="button" onclick="updateKey()">OK</button>
+    <br>
+    <img src="zzzzz.jpg" id="myImage"/>
+    <input type="file" id="upload"/>
+    <img src="resources_/logo-003.png"/>
+    
+    <br/><br/>
+
 
 </body>
 </html>
-
-
-
-
-
-
-
