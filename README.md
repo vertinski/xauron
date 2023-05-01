@@ -1,4 +1,4 @@
-# xauron-0.0.1
+# xauron-0.0.2
 ## Project Xauron 🔮
 
 ![logo](https://github.com/vertinski/xauron/blob/main/resources/logo-002_small.png "xauron")
