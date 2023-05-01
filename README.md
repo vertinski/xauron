@@ -15,16 +15,19 @@
 
 ✅ Embed the stream in Your blog or any other website, bc it's a dynamic IMG element
 
+✅ Added stream scrambling functionality
+
 <br/>
 
 > Web page is served on port 8888, and API is open at port 8000  
 > Both visible on local network (LAN) unless configured and routed otherwise.  
+> Default stream scrambling key is 'testkey' and is stored in txt_key.txt file
 
 <br/>
 
 ⚠️ Web page and API are accessible to anyone in local network for now! Needs access rules and network management. 
 
-⚠️ Ongoing active development on stream encryption, needs to be implemented asap. 
+⚠️ Ongoing development on stream encryption. For now only simple scrambling is enabled. Change the default key!
 
 <br/>
 🤝 Contributions welcome!  DM <a href="https://twitter.com/xauron_io">@xauron_io</a> on twitter
